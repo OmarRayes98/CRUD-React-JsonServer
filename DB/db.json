@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "name": "omar",
+      "email": "omar@edu.sy",
+      "phone": "",
+      "active": true,
+      "id": 1
+    },
+    {
+      "name": "React CRUD",
+      "email": "",
+      "phone": "",
+      "active": true,
+      "id": 2
+    },
+    {
+      "name": "Routes based on Object ...Best way to create Routes",
+      "email": "",
+      "phone": "",
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "Toastify library for notifications",
+      "email": "",
+      "phone": "",
+      "active": true,
+      "id": 4
+    }
+  ]
+}
