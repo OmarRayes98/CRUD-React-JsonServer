@@ -66,7 +66,7 @@ const EmpListing = ()=> {
         e.preventDefault();
 
         if (window.confirm("Do you want to remove?")) {
-        fetch("http://localhost:8000/employee/" + id, {
+        fetch("https://employee2-service.onrender.com/employee/" + id, {
             method: "DELETE",
         })
             .then((res) => {
