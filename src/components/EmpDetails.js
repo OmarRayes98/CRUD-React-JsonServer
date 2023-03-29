@@ -9,7 +9,7 @@ const EmpDetails = () =>
     const [empdata ,setEmpData]= useState({});
 
     useEffect(() => {
-        fetch("http://localhost:8000/employee/"+empid).then((res) => {
+        fetch("https://employee2-service.onrender.com/employee/"+empid).then((res) => {
             return res.json();
         }).then((resp) => {
             setEmpData(resp);

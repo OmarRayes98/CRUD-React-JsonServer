@@ -20,7 +20,7 @@ const EmpListing = ()=> {
         setLoading(true);
         try{
 
-            const {data} = await axios.get("http://localhost:8000/employee");
+            const {data} = await axios.get("https://employee2-service.onrender.com/employee");
 
         setTimeout(() => {
             setLoading(false);

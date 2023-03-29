@@ -27,7 +27,7 @@ const EmpCreate = () =>
         useEffect(() => {
             if(empid !=="add"){
 
-            fetch("http://localhost:8000/employee/"+empid).then((res) => {
+            fetch("https://employee2-service.onrender.com/employee/"+empid).then((res) => {
                 return res.json();
             }).then((resp) => {
     
@@ -55,7 +55,7 @@ const EmpCreate = () =>
         
         if(empid==="add"){
             
-        fetch("http://localhost:8000/employee",
+        fetch("https://employee2-service.onrender.com/employee",
         { 
             method:"POST",
             headers:{'Content-Type': 'application/json'},
@@ -76,7 +76,7 @@ const EmpCreate = () =>
         });
 
         }else{
-            fetch("http://localhost:8000/employee/"+empid,
+            fetch("https://employee2-service.onrender.com/employee/"+empid,
         { 
             method:"PUT",
             headers:{'Content-Type': 'application/json'},
