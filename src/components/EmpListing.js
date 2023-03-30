@@ -21,6 +21,7 @@ const EmpListing = ()=> {
         try{
 
             const {data} = await axios.get("https://employee2-service.onrender.com/employee");
+            console.log(data);
 
         setTimeout(() => {
             setLoading(false);
