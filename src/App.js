@@ -1,3 +1,4 @@
+import './App.css';
 import { BrowserRouter} from "react-router-dom";
 import RouteRender from "./core/route-render";
 import { ToastContainer } from "react-toastify";
@@ -7,7 +8,7 @@ function App() {
     <div className="text-center mt-5">
       <ToastContainer/>
       
-      <BrowserRouter>
+      <BrowserRouter basename={'/'}>
 
       <RouteRender/>
       

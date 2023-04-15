@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
+
 const EmpDetails = () =>
 {
 
@@ -22,21 +23,20 @@ const EmpDetails = () =>
 
 return (
     <div>
-        <div className="card" style={{"textAlign":"left"}}>
+        <div className="card" style={{"textAlign":"center"}}>
             <div className="card-title">
-            <h2>Employee Deatlis</h2>
+            <h1>Employee Details</h1>
             </div>
 
-            <div className="card-body"></div>
             
         {
         empdata &&
         <div>
-        <h1>The Employee name is : {empdata.name} ({empdata.id})</h1>
-        <h3>Contact Details</h3>
-        <h5>Email is :{empdata.email}</h5>
-        <h5>Phone is :{empdata.phone}</h5>
-        <Link to="/" className="btn btn-danger">Back to List</Link>
+        <h3 className="hh3" >The Employee Name is : {empdata.name} ({empdata.id})</h3>
+        <h4 className="hh4" >Contact Details</h4>
+        <h6>Email is :{empdata.email}</h6>
+        <h6>Phone is :{empdata.phone}</h6>
+        <Link to="/" className="btn btn-danger mb-3">Back to List</Link>
 
         </div>
         }

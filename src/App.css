@@ -1,0 +1,14 @@
+@media only screen and (max-width: 450px) {
+
+    .hh3{
+        font-size: 1.2em;
+    }
+
+    .hh4{
+        font-size: 1.1em;
+    }
+
+    .card {
+        border:none;
+    }
+}

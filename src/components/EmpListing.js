@@ -39,7 +39,7 @@ const EmpListing = ()=> {
 
         useEffect(() => {
 
-            if(effectRun.current === true){
+            if(effectRun.current === false){
 
             
             fetchData();
@@ -131,9 +131,9 @@ return (
                                         <td>{item.email}</td>
                                         <td>{item.phone}</td>
                                         <td>
-                                            <Link onClick={(e) => {LoadEdit(e,item.id)}} className='btn btn-success'>Edit</Link>
-                                            <Link onClick={(e) => {DeleteFunction(e,item.id)}} className='btn mx-2 my-sm-2 btn-danger'>Delete</Link>
-                                            <Link onClick={(e) =>LoadDetails(e,item.id)} className='btn btn-primary'>Details</Link>
+                                            <Link onClick={(e) => {LoadEdit(e,item.id)}} className='btn btn-success ' style={{width:'75px'}}>Edit</Link>
+                                            <Link onClick={(e) => {DeleteFunction(e,item.id)}} className='btn mx-2 my-2 btn-danger'style={{width:'75px'}}>Delete</Link>
+                                            <Link onClick={(e) =>LoadDetails(e,item.id)} className='btn btn-primary'style={{width:'75px'}}>Details</Link>
     
                                         </td>
     
